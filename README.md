@@ -1,5 +1,7 @@
 # Análisis de Retención y Segmentación de Clientes (RFM) con BigQuery
 
+![Dashboard de segmentación RFM y retención](dashboard.png)
+
 Análisis de comportamiento de compra para la tienda de merchandising de Google (Google Merchandise Store), usando datos reales de eventos de Google Analytics 4. El objetivo: identificar qué clientes retener y en qué punto del ciclo de vida se pierde a los compradores después de su primera compra.
 
 ## Problema de negocio
