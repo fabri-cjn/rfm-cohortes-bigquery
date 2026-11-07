@@ -27,7 +27,7 @@ El análisis se construyó en 5 fases, cada una documentada en su propio archivo
 
 ## Decisiones de limpieza de datos
 
-Estas son las decisiones no triviales que tomé durante el proceso, con su justificación:
+Estas son las decisiones no triviales que tomé durante el proceso:
 
 **`transaction_id` no es un identificador único confiable.** Se encontró un caso real de un mismo usuario con 2 compras distintas (distinto `event_timestamp` y `purchase_revenue`) compartiendo el mismo `transaction_id`. Por esta razón, se usó `event_timestamp` como grano de "una fila = una compra" (y, de igual forma, de "una visita" para el análisis de cohortes por sesión), ya que se confirmó que es único en todo el dataset tanto para el evento `purchase` como para `session_start`.
 
